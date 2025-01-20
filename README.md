@@ -1,6 +1,6 @@
-# AIORA - Virtual Assistant
+# AIORA - Voice Assistant
 
-**AIORA** is a virtual assistant built using HTML, CSS, and JavaScript. It is designed to help users perform various tasks by recognizing voice commands, playing songs via Spotify, and opening multiple websites through commands. This project combines web technologies with a simple, intuitive interface to offer a hands-free, interactive experience.
+**AIORA** is a voice assistant built using HTML, CSS, and JavaScript. It is designed to help users perform various tasks by recognizing voice commands, playing songs via Spotify, and opening multiple websites through commands. This project combines web technologies with a simple, intuitive interface to offer a hands-free, interactive experience.
 
 ## Features
 
@@ -11,7 +11,7 @@
 
 ## Demo
 
-To see AIORA in action, visit the [live demo link](#) (if available).
+To see AIORA in action, visit the [live demo link](https://aiora-voice-assistant.vercel.app/) (if available).
 
 ## Installation
 
@@ -27,8 +27,8 @@ Make sure you have the following installed:
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/your-username/aiora_voice-assistant.git
-    cd aiora_voice-assistan
+    git clone https://github.com/your-username/Aiora_Voice-Assistance.git
+    cd Aiora_Voice-Assistance
     ```
 
 2. **Open the `index.html` file** in your browser:
