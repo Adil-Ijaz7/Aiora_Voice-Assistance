@@ -4,14 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aiora Assistant</title>
-  <link rel="shortcut icon" href="main.png" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="main.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <img src="NTHO.gif" alt="logo" id="logo">
-    <h1>I'm <span id="name">Aiora</span> , Your <span id="va">Virtual Assistant</span></h1>
-    <img src="voice.gif" alt="voice" id="voice">
-    <button id="btn"><img src="mic.svg" alt="mic"><span id="content"> Click here for talk to me</span> </button>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="logo-container">
+                <img src="NTHO.gif" alt="logo" id="logo">
+                <div class="pulse-ring"></div>
+            </div>
+            <h1>I'm <span id="name">Aiora</span>, Your <span id="va">Virtual Assistant</span></h1>
+            <p class="tagline">Powered by AI • Voice Enabled • Always Ready</p>
+        </header>
+
+        <!-- Chat Container -->
+        <div class="chat-container" id="chatContainer">
+            <div class="chat-header">
+                <div class="chat-status">
+                    <span class="status-dot"></span>
+                    <span>Aiora is online</span>
+                </div>
+                <button class="clear-chat" id="clearChat" title="Clear Chat">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="welcome-message">
+                    <i class="fas fa-robot"></i>
+                    <p>Hello! I'm Aiora, your AI assistant. How can I help you today?</p>
+                </div>
+            </div>
+            <div class="typing-indicator" id="typingIndicator">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Voice Animation -->
+        <div class="voice-container" id="voiceContainer">
+            <img src="voice.gif" alt="voice" id="voice">
+            <p class="listening-text">Listening...</p>
+        </div>
+
+        <!-- Input Section -->
+        <div class="input-section">
+            <div class="input-container">
+                <input type="text" id="textInput" placeholder="Type your message here..." autocomplete="off">
+                <button id="sendBtn" title="Send Message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+            <div class="voice-btn-container">
+                <button id="btn" title="Voice Input">
+                    <img src="mic.svg" alt="mic">
+                    <span id="content">Click to speak</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="quick-actions">
+            <button class="quick-btn" data-command="what's the time">
+                <i class="fas fa-clock"></i>
+                <span>Time</span>
+            </button>
+            <button class="quick-btn" data-command="what's the date">
+                <i class="fas fa-calendar"></i>
+                <span>Date</span>
+            </button>
+            <button class="quick-btn" data-command="open youtube">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube</span>
+            </button>
+            <button class="quick-btn" data-command="open spotify">
+                <i class="fab fa-spotify"></i>
+                <span>Spotify</span>
+            </button>
+        </div>
+
+        <!-- Settings Panel -->
+        <div class="settings-toggle" id="settingsToggle">
+            <i class="fas fa-cog"></i>
+        </div>
+        <div class="settings-panel" id="settingsPanel">
+            <h3><i class="fas fa-key"></i> API Settings</h3>
+            <div class="setting-item">
+                <label for="apiKey">OpenRouter API Key</label>
+                <input type="password" id="apiKey" placeholder="Enter your API key">
+                <small>Get your API key from <a href="https://openrouter.ai/keys" target="_blank">OpenRouter</a></small>
+            </div>
+            <div class="setting-item">
+                <label for="voiceSelect">Voice</label>
+                <select id="voiceSelect"></select>
+            </div>
+            <div class="setting-item">
+                <label for="voiceSpeed">Voice Speed</label>
+                <input type="range" id="voiceSpeed" min="0.5" max="2" step="0.1" value="1">
+                <span id="speedValue">1x</span>
+            </div>
+            <button class="save-settings" id="saveSettings">
+                <i class="fas fa-save"></i> Save Settings
+            </button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
