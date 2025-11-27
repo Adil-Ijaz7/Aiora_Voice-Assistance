@@ -176,7 +176,7 @@ Contributions are welcome! Here's how you can help:
 **Adil Ijaz**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Adil--Ijaz7-181717?style=flat-square&logo=github)](https://github.com/Adil-Ijaz7)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/adil-ijaz7/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/aadilijaz/)
 
 *Front-end Developer & Computer Science Student*
 
